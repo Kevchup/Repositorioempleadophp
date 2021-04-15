@@ -4,6 +4,11 @@ $cc =$_POST['concedula'];
 $vehiculo = "SELECT * FROM dvehiculo WHERE cedula = $cc";
 
 $resultado= mysqli_query($conexion,$vehiculo);
+
+if(!$resultado){
+    echo "el dato no existe";
+}
+
 ?>
 
 <!DOCTYPE html>
