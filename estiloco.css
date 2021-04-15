@@ -18,7 +18,7 @@ grid-auto-rows: 50px;
 
 .table__title{
 grid-column-start: 1;
-grid-column-end: 7;
+grid-column-end: 8;
 
 background: rgb(50, 38, 221);
 color: white;
