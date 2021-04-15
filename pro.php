@@ -23,6 +23,12 @@ $linea = $_POST['Linea'];
 $modelo = $_POST['Modelo'];
 $valor = $_POST['Valor'];
 
+
+$actualizar = "UPDATE dvehiculo SET valori='$imp' WHERE cedula = $cedula";
+$resultado = mysqli_query($conexion,$actualizar);
+if(!$resultado){
+    echo 'Error al registrarse';
+}
 $impt;
 $imp;
 $des=0;
