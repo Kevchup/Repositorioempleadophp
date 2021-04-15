@@ -4,8 +4,6 @@ $cc =$_POST['concedula'];
 $vehiculo = "SELECT * FROM dvehiculo WHERE cedula = $cc";
 
 $resultado= mysqli_query($conexion,$vehiculo);
-
-
 ?>
 
 <!DOCTYPE html>
@@ -27,6 +25,7 @@ $resultado= mysqli_query($conexion,$vehiculo);
 <div class="table__header">linea</div>
 <div class="table__header">modelo</div>
 <div class="table__header">valor</div>
+<div class="table__header">valor impuesto</div>
 <?php
 $resultado= mysqli_query($conexion,$vehiculo);
 while($row=mysqli_fetch_assoc($resultado)){   ?>
@@ -36,6 +35,7 @@ while($row=mysqli_fetch_assoc($resultado)){   ?>
 <div class="table__item"><?php echo $row["linea"];?></div>
 <div class="table__item"><?php echo $row["modelo"];?></div>
 <div class="table__item"><?php echo $row["valor"];?></div>
+<div class="table__item"><?php echo $row["valori"];?></div>
 <?php } mysqli_free_result($resultado);?>
 </div>
 
