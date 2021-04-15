@@ -6,8 +6,9 @@ $vehiculo = "SELECT * FROM dvehiculo WHERE cedula = $cc";
 $resultado= mysqli_query($conexion,$vehiculo);
 
 if(!$resultado){
-    echo "el dato no existe";
+    echo 'el dato no existe';
 }
+else{
 
 ?>
 
@@ -51,6 +52,6 @@ while($row=mysqli_fetch_assoc($resultado)){   ?>
 </body>
 </html>
 <?php
-
+}
 ?>
 
