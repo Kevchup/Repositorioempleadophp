@@ -1,0 +1,28 @@
+
+<html>
+<head>
+<title>Calculo impuestos</title>
+<meta charset="utf8">
+</head>
+
+<body>
+<h1>Menu calculo impuestos</h1>
+<!--FORMULARIO-->
+<form action="index.php" method="post">
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<p><input type="submit" value="Ingresar datos" /></p>
+</form>
+
+<form action="rangos.php" method="post">
+<p><input type="submit" value="Modificar rangos" /></p>
+</form>
+
+<form action="consultar.php" method="post">
+<p>Consultar por cedula:<input type="text" name="concedula" pattern="[0-9]{6,10}" title="La cedula debe ser solo números y tener una longitud máxima de 10 caracteres" required></p>
+<p><input type="submit" value="consultar" /></p>
+
+</form>
+
+</body>
+</html>
+
